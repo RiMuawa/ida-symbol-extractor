@@ -5,7 +5,7 @@ A lightweight IDA Pro script for extracting function symbol names and addresses 
 
 ## Features
 
-- Extracts `[string_ptr, function_ptr]` pairs from specified memory range
+- Recognize `[string_ptr, function_ptr]` pairs from specified memory range
 - Renames functions in IDA Pro automatically
 - Simple, minimal dependency (IDAPython only)
 
@@ -17,6 +17,8 @@ This tool is especially useful when:
 - You're analyzing binaries with hardcoded dispatch tables
 - Function names are stored as C strings followed by pointers in a known format (e.g., `.word "name" + .word address`)
 
+>example use case:
+![image](/images/image.png)
 
 ## Getting Started
 
