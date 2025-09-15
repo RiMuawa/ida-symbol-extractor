@@ -3,11 +3,11 @@ from idautils import *
 from ida_bytes import *
 from ida_name import set_name
 from ida_funcs import add_func, get_func
-from ida_kernwin import msg, ask_addr, get_screen_ea
+from ida_kernwin import msg, ask_addr
 
-cur_ea = get_screen_ea()
+# gpt tell me that before ida6.x should use this api
+cur_ea = ScreenEA()
 
-# Only can be use after IDA 7.x
 start_addr = ask_addr(cur_ea, "Please enter the start address:")
 end_addr = ask_addr(cur_ea, "Please enter the end address:")
 

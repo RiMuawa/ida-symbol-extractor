@@ -33,3 +33,10 @@ start_addr = 0x00 #Add your own address here
 end_addr   = 0x00 #Add your own address here
 ```
 
+# IDA Version Notice
+
+This repository contains two versions of the script, targeting different IDA generations:
+
+`symbol-extractor_legacy.py` → for IDA 6.x (uses ScreenEA() API).
+
+`symbol-extractor.py` → for IDA 7.x and later (uses get_screen_ea() API).
